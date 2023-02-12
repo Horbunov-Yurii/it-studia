@@ -36,3 +36,12 @@ header {
     color: #FFFFFF;
 
 }
+
+.navigation__link:hover,
+.navigation__link:focus {
+    color: #4985FF;
+}
+
+.navigation__link:active {
+    color: red;
+}

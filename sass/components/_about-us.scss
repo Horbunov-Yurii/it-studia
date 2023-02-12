@@ -62,12 +62,25 @@ border-radius: 30px;
   justify-content: center;
 }
 
+.about-us__box:hover .about-us__icon {
+    fill: red;
+}
+
+.about-us__box:hover .about-us__number {
+    color: red;
+}
+
+.about-us__box:hover +.about-us__info {
+    color: #4985FF;
+}
+
 
 .about-us__icon {
     width: 30px;
 height: 30px;
 fill: #4985FF;
 }
+
 
 .about-us__number {
     font-weight: 400;

@@ -4,6 +4,7 @@
     background-image: linear-gradient(to bottom, #504DC2 50%, #5F12D0 , white 50%);
 } 
 
+
 .works__box {
     display: flex;
     align-items: center;
@@ -16,6 +17,7 @@ font-size: 36px;
 line-height: 1.47;
 color: #FFFFFF;
 width: 540px;
+ text-shadow: 5px 5px 10px tomato, 10px 10px 20px black;
 }
 
 .works__btn {
@@ -30,6 +32,19 @@ border-radius: 30px;
 border: none;
 box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 margin-left: 370px;
+}
+
+
+.works__btn:hover,
+.works__btn:focus {
+      color: #4985FF;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.works__btn:active {
+     background-color: red;
+    color: black;
 }
 
 .works__list {

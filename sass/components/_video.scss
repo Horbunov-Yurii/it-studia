@@ -14,6 +14,7 @@ line-height: 1.47;
 text-align: center;
 color: #FFFFFF;
 margin-bottom: 30px;
+ text-shadow: 10px 10px 20px red;
 }
 
 .video__text {
@@ -51,7 +52,13 @@ background-color: transparent;
 display: flex;
 justify-content: center;
 align-items: center;
-// margin-bottom: 85px;
+}
+
+.video__button:hover,
+.video__button:focus {
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
 }
 
 .video__button::before {
@@ -60,13 +67,19 @@ align-items: center;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    // border-color: #4985FF;
     border: 1px solid  #4985FF;
     background-image: url(../../images/play.svg);
     margin-right: 21px;
     background-color: #4985FF;
-    
 }
+
+.video__button::before:hover,
+.video__button::before:focus {
+    background-color: red;
+    border: 1px solid  red;
+}
+
+
 
 .video__border {
     border-bottom: 1px solid #E0E0E0;

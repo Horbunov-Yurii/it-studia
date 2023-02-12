@@ -53,6 +53,18 @@ text-align: center;
 color: #FFFFFF;
 }
 
+.subscribe__button:hover,
+.subscribe__button:focus {
+   color: #4985FF;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.subscribe__button:active {
+   background-color: red;
+    color: black;
+}
+
 .subscribe__info {
    font-weight: 400;
    font-size: 13px;

@@ -60,3 +60,15 @@ margin-left: auto;
 margin-right: auto;
 display: block;
 }
+
+.projects__btn:hover,
+.projects__btn:focus {
+     color: #4985FF;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.projects__btn:active {
+     background-color: red;
+    color: black;
+}

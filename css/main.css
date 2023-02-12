@@ -64,6 +64,15 @@ header {
   color: #FFFFFF;
 }
 
+.navigation__link:hover,
+.navigation__link:focus {
+  color: #4985FF;
+}
+
+.navigation__link:active {
+  color: red;
+}
+
 .hero {
   padding-top: 320px;
   padding-bottom: 335px;
@@ -88,6 +97,7 @@ header {
   font-size: 48px;
   line-height: 1.33;
   color: #FFFFFF;
+  text-shadow: 10px 10px 20px red, 20px 20px 40px blue;
 }
 
 .hero__btn {
@@ -100,6 +110,18 @@ header {
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   border: none;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  color: #4985FF;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.hero__btn:active {
+  background-color: red;
+  color: black;
 }
 
 .services {
@@ -207,6 +229,18 @@ header {
   margin-right: auto;
 }
 
+.services__btn:hover,
+.services__btn:focus {
+  color: #4985FF;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.services__btn:active {
+  background-color: red;
+  color: black;
+}
+
 .about-us {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -268,6 +302,18 @@ header {
   justify-content: center;
 }
 
+.about-us__box:hover .about-us__icon {
+  fill: red;
+}
+
+.about-us__box:hover .about-us__number {
+  color: red;
+}
+
+.about-us__box:hover + .about-us__info {
+  color: #4985FF;
+}
+
 .about-us__icon {
   width: 30px;
   height: 30px;
@@ -308,6 +354,7 @@ header {
   line-height: 1.47;
   color: #FFFFFF;
   width: 540px;
+  text-shadow: 5px 5px 10px tomato, 10px 10px 20px black;
 }
 
 .works__btn {
@@ -322,6 +369,18 @@ header {
   border: none;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   margin-left: 370px;
+}
+
+.works__btn:hover,
+.works__btn:focus {
+  color: #4985FF;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.works__btn:active {
+  background-color: red;
+  color: black;
 }
 
 .works__list {
@@ -441,6 +500,18 @@ header {
   display: block;
 }
 
+.projects__btn:hover,
+.projects__btn:focus {
+  color: #4985FF;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.projects__btn:active {
+  background-color: red;
+  color: black;
+}
+
 .video {
   background-image: url(../../images/video.jpg);
   background-repeat: no-repeat;
@@ -456,6 +527,7 @@ header {
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 30px;
+  text-shadow: 10px 10px 20px red;
 }
 
 .video__text {
@@ -492,6 +564,13 @@ header {
   align-items: center;
 }
 
+.video__button:hover,
+.video__button:focus {
+  color: red;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
 .video__button::before {
   display: block;
   content: "";
@@ -502,6 +581,12 @@ header {
   background-image: url(../../images/play.svg);
   margin-right: 21px;
   background-color: #4985FF;
+}
+
+.video__button::before:hover,
+.video__button::before:focus {
+  background-color: red;
+  border: 1px solid red;
 }
 
 .video__border {
@@ -561,6 +646,18 @@ header {
   line-height: 1.25;
   text-align: center;
   color: #FFFFFF;
+}
+
+.subscribe__button:hover,
+.subscribe__button:focus {
+  color: #4985FF;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.subscribe__button:active {
+  background-color: red;
+  color: black;
 }
 
 .subscribe__info {
