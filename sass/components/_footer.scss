@@ -43,6 +43,11 @@
 .footer__link {
     display: flex;
     align-items: center;
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #999999;
 }
 
 .footer__link:hover,
@@ -52,19 +57,12 @@
 }
 
 .footer__icon {
-    fill: #999999;
+    fill: currentColor;
     width: 15px;
     height: 15px;
     margin-right: 15px;
 }
 
-
-.footer__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.57;
-    color: #999999;
-}
 
 .footer__border {
     border: 1px solid #E0E0E0;
