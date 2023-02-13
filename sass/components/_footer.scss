@@ -29,9 +29,12 @@
     margin-bottom: 35px;
 }
 
+
 .footer__contact {
     margin-bottom: 30px;
 }
+
+
 
 .footer__contact:last-child {
     margin-bottom: 0;
@@ -40,6 +43,12 @@
 .footer__link {
     display: flex;
     align-items: center;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+    color: #4985FF;
+    
 }
 
 .footer__icon {

@@ -515,7 +515,6 @@ header {
 .video {
   background-image: url(../../images/video.jpg);
   background-repeat: no-repeat;
-  height: 570px;
   padding-top: 70px;
   padding-bottom: 85px;
 }
@@ -583,19 +582,18 @@ header {
   background-color: #4985FF;
 }
 
-.video__button::before:hover,
-.video__button::before:focus {
+.video__button:hover::before,
+.video__button:focus::before {
   background-color: red;
   border: 1px solid red;
 }
 
 .video__border {
   border-bottom: 1px solid #E0E0E0;
-  margin-top: 47px;
+  margin-top: 85px;
 }
 
 .subscribe {
-  padding-top: 85px;
   padding-bottom: 85px;
 }
 
@@ -706,6 +704,11 @@ header {
 .footer__link {
   display: flex;
   align-items: center;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: #4985FF;
 }
 
 .footer__icon {
