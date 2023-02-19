@@ -131,7 +131,7 @@ header {
 
 .hero:hover .hero__title {
   text-shadow: 10px 10px 20px red, 20px 20px 40px blue;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .hero__btn {
@@ -337,7 +337,7 @@ header {
   height: 400px;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
-  margin-left: 121px;
+  margin-left: auto;
   margin-bottom: 90px;
   transform: scale(1);
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -585,9 +585,14 @@ header {
   color: black;
 }
 
+.conteiner .video {
+  overflow: hidden;
+}
+
 .video {
   background-image: url(../../images/video.jpg);
   background-repeat: no-repeat;
+  background-position: center top;
   padding-top: 70px;
   padding-bottom: 85px;
 }
@@ -620,12 +625,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(1);
+  transform: translate(-200%);
   transition: 1500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.video__images:hover {
-  transform: scale(1.1) rotateY(360deg);
+.video:hover .video__images {
+  transform: translate(0);
 }
 
 .video__button {

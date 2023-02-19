@@ -13,6 +13,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -21,46 +22,60 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link navigation__link-active">Головна</a>
+              <a href="#" class="navigation__link navigation__link-active"
+                >Головна</a
+              >
             </li>
             <li class="navigation__item">
-              <a href="#projects" class="navigation__link navigation__link-active">Наші проекти</a>
+              <a
+                href="#projects"
+                class="navigation__link navigation__link-active"
+                >Наші проекти</a
+              >
             </li>
             <li class="navigation__item">
-              <a href="#services" class="navigation__link navigation__link-active">Послуги</a>
+              <a
+                href="#services"
+                class="navigation__link navigation__link-active"
+                >Послуги</a
+              >
             </li>
             <li class="navigation__item">
-              <a href="#subscribe" class="navigation__link navigation__link-active">Новини</a>
+              <a
+                href="#subscribe"
+                class="navigation__link navigation__link-active"
+                >Новини</a
+              >
             </li>
             <li class="navigation__item">
-              <a href="#footer" class="navigation__link navigation__link-active">Контакти</a>
+              <a href="#footer" class="navigation__link navigation__link-active"
+                >Контакти</a
+              >
             </li>
           </ul>
         </nav>
-       
       </div>
     </header>
     <main>
       <!-- секция герой -->
       <section class="hero" id="hero">
         <div class="container">
-          <p class="hero__text">Передова IT студія</p>
+          <p class="hero__text" data-aos="zoom-in">Передова IT студія</p>
           <h1 class="hero__title">
             Ми створюємо легкі рішення важких задач і проблем
           </h1>
           <button type="button" class="hero__btn">Наші проекти</button>
-           <a href="#hero" class="hero__arrow">
-             <svg class="hero__icon">
-            <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
-           </svg>
-          </a> 
-          
+          <a href="#hero" class="hero__arrow">
+            <svg class="hero__icon">
+              <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
         </div>
       </section>
       <!-- секция услуги -->
       <section class="services" id="services">
         <div class="container">
-          <h2 class="services__title">
+          <h2 class="services__title" data-aos="zoom-in-right">
             Ми створюємо мобільні додатки для великих корпорацій
           </h2>
           <p class="services__text">
@@ -124,66 +139,66 @@
       <!-- секция о нас -->
       <section class="about-us">
         <div class="container">
-         <div class="about__cont">
-             <div class="about__content">
-            <h2 class="about-us__title">Високі стандарти розробки</h2>
-            <p class="about-us__text">
-              Lorem Ipsum - це текст-"риба", що часто використовується в пресі
-              та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
-              латиниці з початку XVI ст.
-            </p>
-          <a href="" class="about-us__link">Детальніше про компанію</a>
+          <div class="about__cont">
+            <div class="about__content">
+              <h2 class="about-us__title" data-aos="zoom-in">Високі стандарти розробки</h2>
+              <p class="about-us__text">
+                Lorem Ipsum - це текст-"риба", що часто використовується в пресі
+                та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
+                латиниці з початку XVI ст.
+              </p>
+              <a href="" class="about-us__link">Детальніше про компанію</a>
+            </div>
+            <img
+              src="./images/about-us.png"
+              alt="разработка приложений"
+              class="about-us__image" />
           </div>
-          <img
-            src="./images/about-us.png"
-            alt="разработка приложений"
-            class="about-us__image" />
-         </div>
 
           <ul class="about-us__list">
             <li class="about-us__item">
-             <div class="about-us__box">
-                 <svg class="about-us__icon">
-                <use href="./images/symbol-defs.svg#icon-about-us"></use>
-              </svg>
-              <p class="about-us__number">125</p>
-             </div>
+              <div class="about-us__box">
+                <svg class="about-us__icon">
+                  <use href="./images/symbol-defs.svg#icon-about-us"></use>
+                </svg>
+                <p class="about-us__number">125</p>
+              </div>
               <p class="about-us__info">Our projects</p>
             </li>
             <li class="about-us__item">
               <div class="about-us__box">
-                 <svg class="about-us__icon">
-                <use href="./images/symbol-defs.svg#icon-about-us"></use>
-              </svg>
-              <p class="about-us__number">125</p>
-             </div>
+                <svg class="about-us__icon">
+                  <use href="./images/symbol-defs.svg#icon-about-us"></use>
+                </svg>
+                <p class="about-us__number">125</p>
+              </div>
               <p class="about-us__info">Our projects</p>
             </li>
             <li class="about-us__item">
-             <div class="about-us__box">
-                 <svg class="about-us__icon">
-                <use href="./images/symbol-defs.svg#icon-about-us"></use>
-              </svg>
-              <p class="about-us__number">125</p>
-             </div>
+              <div class="about-us__box">
+                <svg class="about-us__icon">
+                  <use href="./images/symbol-defs.svg#icon-about-us"></use>
+                </svg>
+                <p class="about-us__number">125</p>
+              </div>
               <p class="about-us__info">Our projects</p>
             </li>
             <li class="about-us__item">
-             <div class="about-us__box">
-                 <svg class="about-us__icon">
-                <use href="./images/symbol-defs.svg#icon-about-us"></use>
-              </svg>
-              <p class="about-us__number">125</p>
-             </div>
+              <div class="about-us__box">
+                <svg class="about-us__icon">
+                  <use href="./images/symbol-defs.svg#icon-about-us"></use>
+                </svg>
+                <p class="about-us__number">125</p>
+              </div>
               <p class="about-us__info">Our projects</p>
             </li>
             <li class="about-us__item">
-             <div class="about-us__box">
-                 <svg class="about-us__icon">
-                <use href="./images/symbol-defs.svg#icon-about-us"></use>
-              </svg>
-              <p class="about-us__number">125</p>
-             </div>
+              <div class="about-us__box">
+                <svg class="about-us__icon">
+                  <use href="./images/symbol-defs.svg#icon-about-us"></use>
+                </svg>
+                <p class="about-us__number">125</p>
+              </div>
               <p class="about-us__info">Our projects</p>
             </li>
           </ul>
@@ -193,13 +208,15 @@
       <section class="works">
         <div class="container">
           <div class="works__box">
-            <h2 class="works__title">Наші роботи на яких ми спеціалізуємось</h2>
-          <button class="works__btn">Всі послуги</button>
+            <h2 class="works__title" data-aos="zoom-in">Наші роботи на яких ми спеціалізуємось</h2>
+            <button class="works__btn">Всі послуги</button>
           </div>
           <ul class="works__list">
             <li class="works__item">
               <img src="./images/works.png" alt="" class="works__images" />
-              <h3 class="works__description"><span class="work__decor">01.</span> Дослідження і упаковка</h3>
+              <h3 class="works__description">
+                <span class="work__decor">01.</span> Дослідження і упаковка
+              </h3>
               <p class="works__text">
                 Lorem Ipsum - це текст-"риба", що часто використовується в пресі
                 та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
@@ -209,7 +226,9 @@
             </li>
             <li class="works__item">
               <img src="./images/works.png" alt="" class="works__images" />
-              <h3 class="works__description"><span class="work__decor">01.</span> Дослідження і упаковка</h3>
+              <h3 class="works__description">
+                <span class="work__decor">01.</span> Дослідження і упаковка
+              </h3>
               <p class="works__text">
                 Lorem Ipsum - це текст-"риба", що часто використовується в пресі
                 та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
@@ -219,7 +238,9 @@
             </li>
             <li class="works__item">
               <img src="./images/works.png" alt="" class="works__images" />
-              <h3 class="works__description"><span class="work__decor">01.</span> Дослідження і упаковка</h3>
+              <h3 class="works__description">
+                <span class="work__decor">01.</span> Дослідження і упаковка
+              </h3>
               <p class="works__text">
                 Lorem Ipsum - це текст-"риба", що часто використовується в пресі
                 та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
@@ -234,7 +255,7 @@
       <!-- наши проекты -->
       <section class="projects" id="projects">
         <div class="container">
-          <h2 class="projects__title">Наші проекти</h2>
+          <h2 class="projects__title" data-aos="zoom-in">Наші проекти</h2>
           <p class="projects__text">
             Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
             веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
@@ -272,7 +293,7 @@
       <!-- секция видео -->
       <section class="video">
         <div class="container">
-          <h2 class="video__title">Відео про нашу роботу</h2>
+          <h2 class="video__title" data-aos="zoom-in">Відео про нашу роботу</h2>
           <p class="video__text">Просто подивіться, як ми працюємо</p>
           <div class="video__images">
             <button class="video__button"><span>Дивитись відео</span></button>
@@ -283,7 +304,7 @@
       <!-- секция подписки -->
       <section class="subscribe" id="subscribe">
         <div class="container">
-          <h2 class="subscribe__title">Підпишіться на нашу розсилку</h2>
+          <h2 class="subscribe__title" data-aos="fade-down">Підпишіться на нашу розсилку</h2>
           <p class="subscribe__text">
             Корисні статті, акції, новини - отримайте все це зараз!
           </p>
@@ -304,7 +325,7 @@
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
-            <h2 class="footer__title">Контактная информация</h2>
+            <h2 class="footer__title" data-aos="fade-down">Контактная информация</h2>
             <ul class="footer__contacts">
               <li class="footer__contact">
                 <a href="" class="footer__link">
@@ -334,7 +355,7 @@
             </ul>
           </li>
           <li class="footer__item">
-            <h2 class="footer__title">Основні посилання</h2>
+            <h2 class="footer__title" data-aos="fade-down">Основні посилання</h2>
             <ul class="footer__contacts">
               <li class="footer__contact">
                 <a href="" class="footer__link">
@@ -371,7 +392,7 @@
             </ul>
           </li>
           <li class="footer__item">
-            <h2 class="footer__title">Наші проекти</h2>
+            <h2 class="footer__title" data-aos="fade-down">Наші проекти</h2>
             <ul class="footer__contacts">
               <li class="footer__contact">
                 <a href="" class="footer__link">
@@ -408,7 +429,7 @@
             </ul>
           </li>
           <li class="footer__item">
-            <h2 class="footer__title">Соціальні мережі</h2>
+            <h2 class="footer__title" data-aos="fade-down">Соціальні мережі</h2>
             <ul class="footer__contacts">
               <li class="footer__contact">
                 <a href="" class="footer__link">
@@ -449,5 +470,9 @@
         <p class="footer__mnemo">&#128293; 2023 - by Yurii Horbunov</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
