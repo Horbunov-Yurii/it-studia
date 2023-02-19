@@ -2,6 +2,21 @@
     padding-top: 100px;
     padding-bottom: 85px;
     background-image: linear-gradient(to bottom, #504DC2 50%, #5F12D0 , white 50%);
+//       background-image: repeating-radial-gradient(
+//     circle,
+//     purple,
+//     purple 10px,
+//     #4b026f 10px,
+//     #4b026f 20px
+//   );
+//   background-image: repeating-linear-gradient(
+//     -45deg,
+//     #606dbc,
+//     #606dbc 10px,
+//     #465298 10px,
+//     #465298 20px
+//   );
+background: linear-gradient(to bottom, #000000 15%, #0f9b0f, white 50%);
 } 
 
 
@@ -32,6 +47,7 @@ border-radius: 30px;
 border: none;
 box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 margin-left: 370px;
+transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -69,7 +85,16 @@ margin-left: 370px;
 .works__images {
     display: block;
     margin-bottom: 30px;
+    transform: scale(1);
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.works__images:hover {
+
+    transform: scale(1.1) rotateY(180deg);
+}
+
+
 
 .works__description {
     margin-bottom: 30px;

@@ -21,37 +21,44 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Головна</a>
+              <a href="#" class="navigation__link navigation__link-active">Головна</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Наші проекти</a>
+              <a href="#projects" class="navigation__link navigation__link-active">Наші проекти</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Послуги</a>
+              <a href="#services" class="navigation__link navigation__link-active">Послуги</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Новини</a>
+              <a href="#subscribe" class="navigation__link navigation__link-active">Новини</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Контакти</a>
+              <a href="#footer" class="navigation__link navigation__link-active">Контакти</a>
             </li>
           </ul>
         </nav>
+       
       </div>
     </header>
     <main>
       <!-- секция герой -->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <p class="hero__text">Передова IT студія</p>
           <h1 class="hero__title">
             Ми створюємо легкі рішення важких задач і проблем
           </h1>
           <button type="button" class="hero__btn">Наші проекти</button>
+           <a href="#hero" class="hero__arrow">
+             <svg class="hero__icon">
+            <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+           </svg>
+          </a> 
+          
         </div>
       </section>
       <!-- секция услуги -->
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <h2 class="services__title">
             Ми створюємо мобільні додатки для великих корпорацій
@@ -225,7 +232,7 @@
         </div>
       </section>
       <!-- наши проекты -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container">
           <h2 class="projects__title">Наші проекти</h2>
           <p class="projects__text">
@@ -274,7 +281,7 @@
         </div>
       </section>
       <!-- секция подписки -->
-      <section class="subscribe">
+      <section class="subscribe" id="subscribe">
         <div class="container">
           <h2 class="subscribe__title">Підпишіться на нашу розсилку</h2>
           <p class="subscribe__text">
@@ -293,7 +300,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">

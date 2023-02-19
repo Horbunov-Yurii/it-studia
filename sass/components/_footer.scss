@@ -2,6 +2,8 @@
     background-color:  #F6F6F8;
     padding-top: 70px;
     padding-bottom: 30px;
+     background: linear-gradient(to right, #000000, #434343);
+    //  box-shadow: -1px 0px 32px 7px rgba(255,255,255,1) inset;
 }
 
 .footer__list {
@@ -24,7 +26,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.22;
-    color: #000000;
+    color: #999999;
     // margin-right: 40px;
     margin-bottom: 35px;
 }
@@ -43,16 +45,17 @@
 .footer__link {
     display: flex;
     align-items: center;
-    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.57;
     color: #999999;
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__link:hover,
 .footer__link:focus {
     color: #4985FF;
+    stroke: red;
     
 }
 

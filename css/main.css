@@ -62,6 +62,29 @@ header {
   font-size: 16px;
   line-height: 1.25;
   color: #FFFFFF;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 39px;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link-active::before {
+  content: "";
+  width: 100%;
+  border: 2px solid #FFFFFF;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0);
+}
+
+.navigation__item:hover .navigation__link::before,
+.navigation__item:focus .navigation__link::before {
+  border-color: #4985FF;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .navigation__link:hover,
@@ -81,6 +104,11 @@ header {
   background-image: url(../../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero:hover {
+  box-shadow: -1px 0px 25px 12px rgb(10, 84, 255) inset;
 }
 
 .hero__text {
@@ -97,7 +125,13 @@ header {
   font-size: 48px;
   line-height: 1.33;
   color: #FFFFFF;
+  transform: scale(1);
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero:hover .hero__title {
   text-shadow: 10px 10px 20px red, 20px 20px 40px blue;
+  transform: scale(1.2);
 }
 
 .hero__btn {
@@ -110,6 +144,7 @@ header {
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   border: none;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__btn:hover,
@@ -122,6 +157,21 @@ header {
 .hero__btn:active {
   background-color: red;
   color: black;
+}
+
+.hero__icon {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 30px;
+  height: 45px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.hero__icon:hover {
+  stroke: red;
+  stroke-width: 2px;
 }
 
 .services {
@@ -227,6 +277,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services__btn:hover,
@@ -288,6 +339,12 @@ header {
   border-radius: 30px;
   margin-left: 121px;
   margin-bottom: 90px;
+  transform: scale(1);
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-us__image:hover {
+  transform: scale(1.1);
 }
 
 .about-us__list {
@@ -317,6 +374,7 @@ header {
   width: 30px;
   height: 30px;
   fill: #4985FF;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-us__number {
@@ -325,6 +383,7 @@ header {
   line-height: 1.47;
   color: #000000;
   margin-left: 20px;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-us__info {
@@ -333,12 +392,14 @@ header {
   line-height: 1.56;
   color: #999999;
   margin-top: 17px;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works {
   padding-top: 100px;
   padding-bottom: 85px;
   background-image: linear-gradient(to bottom, #504DC2 50%, #5F12D0, white 50%);
+  background: linear-gradient(to bottom, #000000 15%, #0f9b0f, white 50%);
 }
 
 .works__box {
@@ -368,6 +429,7 @@ header {
   border: none;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   margin-left: 370px;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works__btn:hover,
@@ -401,6 +463,12 @@ header {
 .works__images {
   display: block;
   margin-bottom: 30px;
+  transform: scale(1);
+  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works__images:hover {
+  transform: scale(1.1) rotateY(180deg);
 }
 
 .works__description {
@@ -480,6 +548,12 @@ header {
   width: 255px;
   height: 255px;
   border-radius: 10px;
+  transform: scale(1);
+  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__images:hover {
+  transform: scale(1.1) rotateX(180deg);
 }
 
 .projects__btn {
@@ -496,6 +570,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects__btn:hover,
@@ -545,6 +620,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: scale(1);
+  transition: 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.video__images:hover {
+  transform: scale(1.1) rotateY(360deg);
 }
 
 .video__button {
@@ -559,6 +640,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .video__button:hover,
@@ -642,6 +724,7 @@ header {
   line-height: 1.25;
   text-align: center;
   color: #FFFFFF;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe__button:hover,
@@ -668,6 +751,7 @@ header {
   background-color: #F6F6F8;
   padding-top: 70px;
   padding-bottom: 30px;
+  background: linear-gradient(to right, #000000, #434343);
 }
 
 .footer__list {
@@ -687,7 +771,7 @@ header {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
-  color: #000000;
+  color: #999999;
   margin-bottom: 35px;
 }
 
@@ -706,11 +790,13 @@ header {
   font-size: 14px;
   line-height: 1.57;
   color: #999999;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__link:hover,
 .footer__link:focus {
   color: #4985FF;
+  stroke: red;
 }
 
 .footer__icon {
